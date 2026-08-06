@@ -1,0 +1,176 @@
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Espetáculo da Luz: Como a Ciência Explica a Formação dos Arco-Íris</title>
+  <!-- Ligaçã<!DOCTYPE html>o para o ficheiro CSS externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ligação de Acessibilidade para Navegação por Teclado -->
+  <a href="#main-content" class="skip-link">Saltar para o conteúdo principal</a>
+
+  <!-- BARRA DE FERRAMENTAS DE ACESSIBILIDADE (WCAG 2.1) -->
+  <aside class="accessibility-bar" aria-label="Painel de Ferramentas de Acessibilidade">
+    <div class="accessibility-container">
+      
+      <!-- Controlo de Leitura por Voz (TTS) -->
+      <div class="acc-group" role="region" aria-label="Leitura de texto por áudio">
+        <span class="acc-group-title">Ouvir:</span>
+        <button id="btn-play-audio" class="btn-acc" aria-label="Ouvir texto da página em áudio">
+          🔊 <span id="lbl-audio">Ouvir Texto</span>
+        </button>
+        <button id="btn-stop-audio" class="btn-acc" aria-label="Parar leitura em áudio" disabled>
+          ⏹️ Parar
+        </button>
+      </div>
+
+      <!-- Ajuste do Tamanho da Fonte -->
+      <div class="acc-group" role="region" aria-label="Ajustes de texto">
+        <span class="acc-group-title">Texto:</span>
+        <button id="btn-font-increase" class="btn-acc" aria-label="Aumentar tamanho da fonte">A+</button>
+        <button id="btn-font-decrease" class="btn-acc" aria-label="Diminuir tamanho da fonte">A-</button>
+        <button id="btn-font-reset" class="btn-acc" aria-label="Restaurar tamanho padrão da fonte">A</button>
+      </div>
+
+      <!-- Contraste e Tipografia -->
+      <div class="acc-group" role="region" aria-label="Ajustes visuais de tema">
+        <span class="acc-group-title">Tema:</span>
+        <button id="btn-theme-contrast" class="btn-acc" aria-pressed="false" aria-label="Ativar Alto Contraste">
+          ☯️ Alto Contraste
+        </button>
+        <button id="btn-theme-dark" class="btn-acc" aria-pressed="false" aria-label="Ativar Modo Escuro">
+          🌙 Escuro
+        </button>
+        <button id="btn-font-dyslexic" class="btn-acc" aria-pressed="false" aria-label="Ativar Fonte para Dislexia">
+          📖 Fonte Dislexia
+        </button>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <div class="container">
+    
+    <header class="site-header">
+      <span class="tag-category">Física & Óptica Atmosférica</span>
+      <h1>OS LIMITES DA VISÃO HUMANA E AS PROPRIEDADES DA LUZ</h1>
+      <p class="lead">O Espetáculo da Luz: Como a Ciência Explica a Formação dos Arco-Íris</p>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <article class="content-card">
+        
+        <!-- Status de Leitura por Voz em Tempo Real -->
+        <div id="audio-status" class="audio-player-box" aria-live="polite">
+          <span><strong>Assistente de Leitura:</strong> Clica no botão "Ouvir Texto" para escutar a narração científica do artigo.</span>
+        </div>
+
+        <section aria-labelledby="sec-intro">
+          <p>O arco-íris é um dos fenómenos ópticos e meteorológicos mais fascinantes da natureza, tendo inspirado mitos, lendas e manifestações artísticas ao longo da história da humanidade. Da promessa bíblica de renovação ao folclore do pote de ouro, a humanidade sempre buscou significados para as cores que rasgam o céu cinzento após uma tempestade. No entanto, por trás da beleza poética deste evento, existe uma explicação física precisa e elegante.</p>
+
+          <p>A compreensão científica do arco-íris começou a consolidar-se de forma robusta a partir do século XVII, com os experimentos pioneiros de René Descartes e Isaac Newton sobre a natureza da luz. Longe de perder o seu encanto através da explicação racional, o fenómeno torna-se ainda mais surpreendente quando compreendemos que depende de uma geometria exata entre o Sol, as gotas de chuva e a posição do próprio observador.</p>
+
+          <p>Este texto procura explicar, de maneira acessível e fundamentada, os mecanismos físicos que dão vida a este espetáculo de cores no céu.</p>
+        </section>
+
+        <section aria-labelledby="sec-requisitos">
+          <h2 id="sec-requisitos">Condições Fundamentais para a Visualização</h2>
+          <p>Para que um arco-íris seja visível, a presença simultânea de dois elementos básicos é indispensável: <strong>gotículas de água suspensas na atmosfera</strong> (geralmente provenientes de uma chuva recente ou em andamento) e a <strong>luz solar direta</strong>. Além disso, existe uma regra de posicionamento estrita: o Sol deve estar obrigatoriamente <em>atrás do observador</em>, e a cortina de chuva, <em>à sua frente</em>.</p>
+
+          <p>O processo de formação de cada cor que vemos no céu ocorre individualmente em milhões de minúsculas gotas de água que funcionam como pequenos prismas transparentes. Quando um raio de luz solar (que é uma luz policromática, ou seja, composta por todas as cores visíveis juntas) atinge a superfície de uma gota de chuva, três fenómenos físicos sequenciais acontecem: a refração, a reflexão interna e uma segunda refração.</p>
+        </section>
+
+        <!-- DIAGRAMA VETORIAL ACESSÍVEL -->
+        <section aria-labelledby="sec-diagrama">
+          <div class="diagram-container">
+            <h3 id="sec-diagrama">Diagrama Esquemático: A Trajetória da Luz na Gota de Chuva</h3>
+            
+            <svg class="svg-diagram" viewBox="0 0 600 350" role="img" aria-label="Esquema ilustrativo mostrando um raio de luz branca vindo do sol a entrar numa gota circular. Dentro da gota, a luz refrata-se e divide-se nas cores do espectro, reflete na parede traseira e sai refratada em direção ao olho do observador nos ângulos de 40 a 42 graus.">
+              <!-- Fundo do Canvas SVG -->
+              <rect width="600" height="350" fill="#f1f5f9" rx="8"/>
+              
+              <!-- Gota de Água -->
+              <circle cx="300" cy="175" r="120" fill="#e0f2fe" stroke="#0284c7" stroke-width="4"/>
+              <text x="300" y="70" text-anchor="middle" fill="#0369a1" font-weight="bold" font-size="14">Gota de Chuva (Prisma)</text>
+
+              <!-- Raio Incidente (Luz Branca) -->
+              <line x1="50" y1="120" x2="200" y2="120" stroke="#f59e0b" stroke-width="5"/>
+              <text x="100" y="105" text-anchor="middle" fill="#d97706" font-weight="bold" font-size="13">1. Luz Solar (Branca)</text>
+
+              <!-- Dispersão/Refração Dentro da Gota -->
+              <path d="M 200 120 L 380 210" stroke="#dc2626" stroke-width="3" />
+              <path d="M 200 120 L 370 235" stroke="#7c3aed" stroke-width="3" />
+              <text x="270" y="145" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="12">Refração e Dispersão</text>
+
+              <!-- Reflexão Interna -->
+              <path d="M 380 210 L 250 270" stroke="#dc2626" stroke-width="3" />
+              <path d="M 370 235 L 260 282" stroke="#7c3aed" stroke-width="3" />
+              <text x="350" y="270" text-anchor="middle" fill="#1e293b" font-weight="bold" font-size="12">2. Reflexão Interna</text>
+
+              <!-- Segunda Refração (Saída) -->
+              <line x1="250" y1="270" x2="100" y2="310" stroke="#dc2626" stroke-width="3"/>
+              <line x1="260" y1="282" x2="120" y2="330" stroke="#7c3aed" stroke-width="3"/>
+
+              <!-- Indicadores de Ângulo -->
+              <text x="60" y="295" fill="#dc2626" font-weight="bold" font-size="12">Vermelho (~42°)</text>
+              <text x="70" y="340" fill="#7c3aed" font-weight="bold" font-size="12">Violeta (~40°)</text>
+            </svg>
+
+            <p class="diagram-caption">Figura 1: Representação simplificada da refração, dispersão e reflexão interna da luz solar numa gota de água atmosférica.</p>
+          </div>
+        </section>
+
+        <section aria-labelledby="sec-etapas">
+          <h2 id="sec-etapas">Etapas Físicas da Formação das Cores</h2>
+          
+          <ol class="step-list">
+            <li>
+              <strong>Refração e Dispersão (A Separação das Cores):</strong><br>
+              Ao passar do ar para o interior da gota de água, a luz sofre um desvio na sua trajetória e uma alteração na sua velocidade. Este fenómeno é chamado de <em>refração</em>. Como a luz solar é uma mistura de cores, e cada cor possui um comprimento de onda diferente, elas não se propagam na água com a mesma velocidade.<br><br>
+              A luz violeta, por exemplo, reduz mais a sua velocidade e sofre um desvio mais acentuado do que a luz vermelha. Este processo de separação da luz branca nos seus componentes coloridos é denominado <em>dispersão</em>.
+            </li>
+
+            <li>
+              <strong>Reflexão Interna:</strong><br>
+              Após atravessar o interior da gota já separada em cores, a luz atinge a parede posterior da gotícula. Em vez de simplesmente passar para o outro lado, uma parte significativa dessa luz é refletida de volta para o interior da gota, agindo como se a parede traseira da água fosse um espelho. Este passo é crucial para direcionar os raios de luz de volta para o olho do observador.
+            </li>
+
+            <li>
+              <strong>Segunda Refração e a Geometria do Arco:</strong><br>
+              Por fim, ao sair da gota e retornar para o ar, a luz sofre uma segunda refração, acentuando ainda mais a separação das cores. O feixe de luz emerge da gota espalhado num ângulo muito específico: a luz vermelha sai num ângulo de aproximadamente <strong>42°</strong> em relação aos raios solares originais, enquanto a luz violeta sai a cerca de <strong>40°</strong>. As outras cores (laranja, amarelo, verde, azul e anil) distribuem-se organizadamente nesse intervalo.
+            </li>
+          </ol>
+        </section>
+
+        <section aria-labelledby="sec-conclusao">
+          <h2 id="sec-conclusao">A Geometria e a Ilusão Óptica</h2>
+          <p>O arco-íris, portanto, não é um objeto físico localizado num ponto fixo do espaço; ele é uma ilusão óptica e geométrica cuja existência depende inteiramente da posição de quem o observa. Cada pessoa vê um arco-íris ligeiramente diferente, formado por um conjunto único de gotas de chuva que estão no ângulo exato de 40° a 42° em relação aos seus próprios olhos.</p>
+
+          <p>Compreender a ciência por trás deste fenómeno não anula a sua magia. Pelo contrário, transforma o céu num imenso laboratório natural, onde as leis da óptica clássica se unem à meteorologia para pintar a atmosfera. O arco-íris é o lembrete perfeito de que a ciência não destrói a beleza do mundo, mas revela as engrenagens extraordinárias que a tornam possível.</p>
+        </section>
+
+        <!-- REFERÊNCIAS BIBLIOGRÁFICAS -->
+        <section class="references" aria-labelledby="sec-ref">
+          <h3 id="sec-ref">Referências Bibliográficas</h3>
+          <ul>
+            <li><strong>HECHT, Eugene.</strong> <em>Óptica</em>. 2. ed. Lisboa: Fundação Calouste Gulbenkian, 2012.</li>
+            <li><strong>NUSSENZVEIG, Herch Moysés.</strong> <em>Curso de Física Básica: Óptica, Relatividade e Física Quântica</em>. v. 4. 5. ed. São Paulo: Blucher, 2014.</li>
+            <li><strong>WALKER, Jearl.</strong> O arco-íris: como a física explica o formato e as cores do arco-íris no céu. <em>Revista Brasileira de Ensino de Física</em>, São Paulo, v. 22.</li>
+          </ul>
+        </section>
+
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <p>Desenvolvido com foco em Acessibilidade Web (WCAG 2.1 AA/AAA) • Portal de Divulgação Científica</p>
+    </footer>
+  </div>
+
+  <!-- Ligação para o ficheiro JavaScript externo -->
+  <script src="script.js"></script>
+</body>
+</html>
